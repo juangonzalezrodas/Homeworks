@@ -1,0 +1,30 @@
+.city-network {
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    color: #2E7D32;
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  &__container {
+    height: 500px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    background: #FAFAFA;
+  }
+
+  &__info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+
+    strong {
+      color: #2E7D32;
+    }
+  }
+}

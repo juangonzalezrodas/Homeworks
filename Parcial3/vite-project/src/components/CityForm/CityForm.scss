@@ -1,0 +1,53 @@
+.city-form {
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: #2E7D32;
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  &__input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #81C784;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: #4CAF50;
+    }
+  }
+
+  &__button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #388E3C;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
