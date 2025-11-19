@@ -1,0 +1,16 @@
+
+@function rem($pixels) {
+  @return #{$pixels / 16}rem;
+}
+
+@function lighten-color($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}
+
+@function darken-color($color, $amount: 10%) {
+  @return darken($color, $amount);
+}
+
+@function opacity-color($color, $opacity: 0.5) {
+  @return rgba($color, $opacity);
+}

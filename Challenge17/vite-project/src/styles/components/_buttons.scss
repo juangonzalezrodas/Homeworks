@@ -1,0 +1,36 @@
+.btn {
+  @include button();
+
+  &--primary {
+    background: $gradient-primary;
+  }
+
+  &--success {
+    background: $gradient-success;
+  }
+
+  &--danger {
+    background: $danger-color;
+  }
+
+  &--outline {
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background: $primary-color;
+      color: $text-white;
+    }
+  }
+
+  &--large {
+    padding: $spacing-md $spacing-xl;
+    font-size: 1.125rem;
+  }
+
+  &--small {
+    padding: $spacing-xs $spacing-md;
+    font-size: 0.875rem;
+  }
+}

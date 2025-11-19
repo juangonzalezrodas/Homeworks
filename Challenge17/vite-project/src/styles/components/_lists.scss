@@ -1,0 +1,31 @@
+.list {
+  &__item {
+    @include card($spacing-md);
+    margin-bottom: $spacing-md;
+    transition: all $transition-base;
+
+    &--active {
+      background: linear-gradient(135deg, rgba($primary-color, 0.1) 0%, rgba($secondary-color, 0.1) 100%);
+      border-left: 4px solid $primary-color;
+    }
+
+    &:hover {
+      transform: translateX(5px);
+    }
+  }
+
+  &__header {
+    @include flex-between();
+    margin-bottom: $spacing-sm;
+  }
+
+  &__title {
+    font-weight: 600;
+    color: $text-dark;
+  }
+
+  &__meta {
+    font-size: 0.875rem;
+    color: $text-light;
+  }
+}

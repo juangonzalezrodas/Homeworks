@@ -1,0 +1,18 @@
+.header {
+  background: $gradient-primary;
+  color: $text-white;
+  padding: $spacing-xl;
+  text-align: center;
+  box-shadow: $shadow-lg;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: $spacing-sm;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    opacity: 0.9;
+  }
+}

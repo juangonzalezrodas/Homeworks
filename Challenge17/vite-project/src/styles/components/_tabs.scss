@@ -1,0 +1,20 @@
+.tabs {
+  @include flex-center();
+  gap: $spacing-md;
+  margin-bottom: $spacing-xl;
+  background: $bg-secondary;
+  padding: $spacing-sm;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-md;
+
+  &__tab {
+    @include button(transparent, $text-dark);
+    position: relative;
+
+    &--active {
+      background: $gradient-primary;
+      color: $text-white;
+      box-shadow: $shadow-md;
+    }
+  }
+}
